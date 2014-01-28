@@ -21,5 +21,9 @@ void trstdev(vector<double> vec, vector<double> ones, int size, double &trMean, 
 	mediaq = sumq/size;
 	trMean = sumtr/ntr;
 	var = (mediaq - (media * media)) * (size/(size - 1));
+	if(var < 0)
+	{
+		var = 0;
+	}
 	StdDev = sqrt(var);
 }

@@ -51,7 +51,8 @@
    \item all fields have to be included (select the '\code{Check All}' button at the WRDS downloading page);\cr
    \item select the fixed-width text and '\code{G zip}' as output format and compression type, respectively, at the WRDS downloading page.
  }
-An example with fake raw data can be downloaded at \url{http://local.disia.unifi.it/cipollini/webpage-new/data/data_sample.txt.gz}.
+An example with fake raw data can be downloaded at \url{http://local.disia.unifi.it/cipollini/webpage-new/data/data_sample.txt.gz}.\cr
+The package uses the following libraries: 'Gzstream' (available at 'http://www.cs.unc.edu/Research/compgeom/gzstream/' under LGPL license), and 'zlib' (freely available at 'http://www.zlib.net/').
 }
 
 \references{

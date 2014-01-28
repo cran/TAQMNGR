@@ -167,8 +167,8 @@ function(dirInput, dirOutput,
     DirIn    = as.character(dirInput),
     DirOut   = as.character(dirOutput),
     Win      = as.integer(window),
-    Gran     = as.double(granularity),
     DeltaTr  = as.double(deltaTrimmed),
+    Gran     = as.double(granularity),
     UseClean = as.integer(useCleaned),
     PACKAGE  = .package.name() )
 }

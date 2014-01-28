@@ -6,5 +6,6 @@ Maintained by Francesco Calvori (francesco.calvori@gmail.com).
 
 --------------------------------------------------------------------------------
 ChangeLog:
-* 2014-01-13: Initial release of package (TAQMNGR-2014.01-1).
-
+* 2014-01-13: (TAQMNGR-2014.01-1) Initial release of package.
+* 2014-01-28: (TAQMNGR-2014.01-2) Fixed bug in the function TAQ.CleanTickByTick() (file TAQ-functions.R).
+* 2014-01-28: (TAQMNGR-2014.01-2) Fixed bug (numerical issue) in the function TAQ.CleanTickByTick() (file trstdev.cpp).

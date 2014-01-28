@@ -1,10 +1,10 @@
-a9b6a1c07128aa274bb5c2b3cfbd55b4 *ChangeLog
-6e870e23b2edb68a7aadf7966e77ef3f *DESCRIPTION
+e5607400149034014851923b50b1ea10 *ChangeLog
+783a140adeba085e02584073139fc1a0 *DESCRIPTION
 0a280d062454349723fa02d270e2c0b7 *NAMESPACE
-c7a183a8c10616a4a9dc0549854d341d *R/TAQ-functions.R
+eb6043ac60377e7e510877f170f61e7e *R/TAQ-functions.R
 590e9c23a861cdadb6465ddd48edc28b *R/zzz.R
 6cbf38e9475749d3d31f1ae725daa57f *man/TAQ-functions.Rd
-2554e8747f46e8ea26d6e0169a1fd471 *man/TAQ-package.Rd
+77ebae34166a5813911e51d434643387 *man/TAQ-package.Rd
 ca170d74de259cb31abc34496ff71d16 *src/Makevars
 ae3bbb54820e1d49fb90cbba222e973f *src/adler32.c
 0a007cb2251857c4b8c2d77600f0941c *src/aggregate_trade.cpp
@@ -59,7 +59,7 @@ a9d5ab5d0e1146c9e4a5330927d76a12 *src/taq_aggregate.h
 e4f0aee88409bf75e3d37dc5e5863e3c *src/time_stamp.cpp
 1cb01bcc5130eb867b23d6cc38745b4a *src/trees.c
 51fdcb3e2ccf60ca13c06920c89296a3 *src/trees.h
-1889198ead4922e34d0d98f49a087951 *src/trstdev.cpp
+8db8bc8af31f36e8fa82ea4bc1e16f41 *src/trstdev.cpp
 e62eee8757fecfc2cfbf2dda8956097e *src/uncompr.c
 00db2ac6b788a9585c290e1d8f2a61fe *src/verifica_dir.cpp
 87fb6bcb5c3ed4fd534eb4eabf530e9e *src/zconf.h
