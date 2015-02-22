@@ -2,10 +2,17 @@
 ## 'TAQMNGR' package
 ################################################################################
 
-Maintained by Francesco Calvori (francesco.calvori@gmail.com).
+Maintained by Fabrizio Cipollini (cipollini.fabrizio@gmail.com).
 
 --------------------------------------------------------------------------------
 ChangeLog:
-* 2014-01-13: (TAQMNGR-2014.01-1) Initial release of package.
-* 2014-01-28: (TAQMNGR-2014.01-2) Fixed bug in the function TAQ.CleanTickByTick() (file TAQ-functions.R).
-* 2014-01-28: (TAQMNGR-2014.01-2) Fixed bug (numerical issue) in the function TAQ.CleanTickByTick() (file trstdev.cpp).
+* 2014-01-13: (TAQMNGR-2014.01-1) 
+  Initial release of package.
+* 2014-01-28: (TAQMNGR-2014.01-2) 
+  Fixed bug in the function TAQ.CleanTickByTick() (file TAQ-functions.R).
+  Fixed bug (numerical issue) in the function TAQ.CleanTickByTick() (file trstdev.cpp).
+* 2015-02-22: (TAQMNGR-2015.2-1) 
+  Maintainer changed from Francesco Calvori (francesco.calvori@gmail.com).
+  The 'zlib' code is now linked instead to be included in the package.
+  Changed fields 'Depends' and 'LinkingTo' in the DESCRIPTION file.
+  'Makevars' has been simplified.

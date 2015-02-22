@@ -27,7 +27,7 @@
   
   Giampiero M. Gallo <giampiero.gallo@gmail.com>.
   
-  \strong{Maintainer}: <francesco.calvori@gmail.com>
+  \strong{Maintainer}: <fabrizio.cipollini@gmail.com>
 }
 
 \details{
@@ -38,8 +38,8 @@
  \tabular{ll}{
  Package: \tab TAQMNGR\cr
  Type:    \tab Package\cr
- Version: \tab 2014.01-1\cr
- Date:    \tab 2014-01-13\cr
+ Version: \tab 2015.2-1\cr
+ Date:    \tab 2015-02-21\cr
  License: \tab GPL (>= 2)\cr
  }
 }
