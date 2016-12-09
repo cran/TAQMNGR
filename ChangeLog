@@ -16,3 +16,9 @@ ChangeLog:
   The 'zlib' code is now linked instead to be included in the package.
   Changed fields 'Depends' and 'LinkingTo' in the DESCRIPTION file.
   'Makevars' has been simplified.
+* 2016-01-05: (TAQMNGR-2016.1-1) 
+  TAQMNGR is now able to manage millisecond data.
+* 2016-12-09: (TAQMNGR-2016.12-1) 
+  Fixed warnings 'use of non-standard escape character '\%'' (file cleaning_report.cpp). 
+  Fixed package url.
+  Added doi code and url in the DESCRIPTION.

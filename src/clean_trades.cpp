@@ -106,6 +106,15 @@ RcppExport SEXP CleanTickByTick(SEXP DirIn, SEXP DirOut, SEXP Window, SEXP Delta
 		  if(esito) return ret;
 		  ClOut << SoloFiles[i] << endl;
 	  }
+	  else if(tipo == 5)
+	  {
+		  Rcpp::Rcout << Files[i] << " is a trade report (millisecond version).\n";
+		  Rcpp::Rcout << "Cleaning trade (millisecond version)...\n";
+		  
+		  esito = CleanTradeMS(ComFile.c_str(), DirectoryOut, DirectoryTemp, Win, DelTrim, Granul, UseDefault, deleted_files_log);
+		  if(esito) return ret;
+		  ClOut << SoloFiles[i] << endl;
+	  }
 	  else
 	  {
 		  Rcpp::Rcout << "FATAL ERROR: unable to identify the file " << Files[i] << endl;

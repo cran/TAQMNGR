@@ -41,8 +41,25 @@ class MyGzipDec
 	int GetLineWords(char **BufLineWords, int &Nfld, int dim);
 };
 
+class MyGzipDecMillisecond
+{
+	public:
+	gzFile ComFile;
+	int FieldsWidth[13];
+	int FWsum;
+	
+	MyGzipDecMillisecond(const char *FileName);
+	~MyGzipDecMillisecond();
+	
+	int GetLineWords(char **BufLineWords, int &Nfld);
+	int isHeader(char *row);
+	void InitFieldsWidth(char *headerRow);
+	char *trimwhitespace(char *str);
+};
+
 double conteggio(const char *NomeFile);
 int CleanTrade(const char *NomeFile, string DirOut, string DirTemp, int win, double delta, double gra, int flag, vector<string> &deleted_log);
+int CleanTradeMS(const char *NomeFile, string DirOut, string DirTemp, int win, double delta, double gra, int flag, vector<string> &deleted_log);
 int VerificaDir(const char *ndir);
 void bubsort(vector<double> &nums, vector<int> &ordr, int size);
 void bubsort_cleaning_report(vector<int> &date, vector<double> &total, vector<double> &notcorrected_delayed, vector<double> BrownGallo, int N);
