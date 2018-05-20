@@ -56,11 +56,11 @@ int MyGzipDecMillisecond::GetLineWords(char **BufLineWords, int &Nfld)
 	BufLineWords[1] = trimwhitespace(FieldsValue[2]);
 	BufLineWords[2] = Time_M;
 	BufLineWords[3] = trimwhitespace(FieldsValue[7]);
-	BufLineWords[4] = "0\0";
+	BufLineWords[4] = (char *) "0\0";
 	if(!strcmp(trimwhitespace(FieldsValue[9]), "00"))
-		BufLineWords[5] = "0\0";
+		BufLineWords[5] = (char *) "0\0";
 	else
-		BufLineWords[5] = "1\0";
+		BufLineWords[5] = (char *) "1\0";
 	BufLineWords[6] = TR_Scond;
 	BufLineWords[7] = trimwhitespace(FieldsValue[4]);
 	BufLineWords[8] = trimwhitespace(FieldsValue[6]);

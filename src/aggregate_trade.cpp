@@ -3,7 +3,7 @@
 int AggregateT(string DirClean, string sym, string TradeD, string TradeF, string Secs)
 {
 	vector<int> TimeInt;
-	string use, FileTemp = DirClean + separator + "Aggregate" + separator + ".TempTaqGarbage" + separator + "TradeTempAgg.txt.gz";
+	string aux_nome_file, nome_solo_file, use, FileTemp = DirClean + separator + "Aggregate" + separator + ".TempTaqGarbage" + separator + "TradeTempAgg.txt.gz";
 	int BegDate, nInt, date, Time, nTrade = 0, IntInd = 0, esito;
 	double price, priceFirst, priceMin, priceMax, priceLast, size, TotSize = 0, sumVWAP = 0, VWAP;
 	int seconds = atoi(Secs.c_str());
@@ -11,6 +11,7 @@ int AggregateT(string DirClean, string sym, string TradeD, string TradeF, string
 	MyGzipDec *trade;
 	igzstream first(TradeD.c_str());
 	ogzstream out(FileTemp.c_str());
+	size_t last_slash, first_point;
 	
 	trade = new MyGzipDec(TradeD.c_str());
 	
@@ -19,7 +20,15 @@ int AggregateT(string DirClean, string sym, string TradeD, string TradeF, string
 	
 	out << "DATE" << "\t" << "TIME" << "\t" << "FIRST" << "\t" << "MIN" << "\t" << "MAX" << "\t" << "LAST" << "\t" << "SIZE" << "\t" << "#TRADES" << "\t" << "VWAP"; 
 	getline(first, use, '\n');
-	first >> use >> BegDate >> use >> priceFirst;
+	first >> use >> use >> use >> priceFirst;
+	
+	last_slash = TradeD.find_last_of("/\\");
+	aux_nome_file = TradeD.substr(last_slash + 1);
+	first_point = aux_nome_file.find_first_of(".");
+	nome_solo_file = aux_nome_file.substr(0, first_point);
+	BegDate = atoi(nome_solo_file.c_str());
+	date = BegDate;
+	
 	priceMin = priceFirst;
 	priceMax = priceFirst;
 	first.close();
@@ -31,7 +40,7 @@ int AggregateT(string DirClean, string sym, string TradeD, string TradeF, string
 	while(outcome)
 	{
 		outcome = trade->GetLineWords(lineWords, CntFlds, 9);
-		date = atoi(lineWords[1]);
+		//date = atoi(lineWords[1]);
 		Time = atoi(lineWords[2]);
 		price = atof(lineWords[3]);
 		size = atof(lineWords[8]);

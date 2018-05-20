@@ -13,8 +13,8 @@ MyGzipDec::~MyGzipDec()
 
 int MyGzipDec::GetLineWords(char **BufLineWords, int &Nfld, int dim)
 {
-	register char inch;
-	register int ind = 0;
+	char inch;
+	int ind = 0;
 	char *SngWord;
 	
 	Nfld = 0;

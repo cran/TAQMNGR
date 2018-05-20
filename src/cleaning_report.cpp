@@ -82,8 +82,7 @@ RcppExport SEXP CleaningReport(SEXP DirIn, SEXP Symbol)
 	cout << "Directory: " << directory << endl;
 	cout << "Symbol: " << symbol << endl << endl;
 	
-  // Changed 2016-12-09 to fix compilation warnings on some platforms
-//	cout << "#TRADES \t NOTCORR_DELAY \t BROWN_GALLO \t NOTCORR_DELAY(\%) \t BROWN_GALLO(\%)" << endl;
+  // (2016-12-09) Replaced \% with %% to fix compilation warnings on some platforms
 	cout << "#TRADES \t NOTCORR_DELAY \t BROWN_GALLO \t NOTCORR_DELAY(%%) \t BROWN_GALLO(%%)" << endl;
 	cout << tot_total << "\t" << tot_notcorrected_delayed << "\t" << tot_BrownGallo << "\t" << tot_notcorrected_delayed / tot_total * 100 << "\t" << tot_BrownGallo / tot_total * 100 << endl << endl;
 	return ret;

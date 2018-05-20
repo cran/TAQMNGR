@@ -19,8 +19,8 @@ int CleanTrade(const char *NomeFile, string DirOut, string DirTemp, int win, dou
 	vector<int> IndOrd;
 	int HlfWin = win/2, NObs = 2*HlfWin + 1, EndStg = HlfWin + 1, sz, szMat;
 	double nrighe, price, nzside = floor(NObs*(delta/2)), UpBound = NObs - nzside, TrMean = 0, StDev = 0;
-	register double perc, avanza = 0;
-	register int subcount = 0;
+	double perc, avanza = 0;
+	int subcount = 0;
 	char ConfSym[32], ConfDate[32], *NomeOut;
 	char **lineWords = new char*[9];
 	for(int i = 0; i < 9; i++) lineWords[i] = new char[32];
